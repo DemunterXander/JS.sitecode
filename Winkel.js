@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         //de setitem zet het item dat je hebt gekocht in de locazlstorage van hierboven  json.stringify zorgt ervoor dat de string naar een array wordt geconverteerd
         localStorage.setItem("winkelkar", JSON.stringify(winkelkar));
 
-        
+
     }
 
 
@@ -51,8 +51,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p class="beschrijving"  >${printer.beschrijving}</p> 
             </div>
                 <p>${printer.prijs}</p> 
-                <button>kopen</button>
+                <button class="printerKopen">kopen</button>
             `;
+
+            printerItem.querySelector(".printerKopen").addEventListener("click", () => voegToeAanWinkelmand(printer))
 
             printerList.appendChild(printerItem);
         });
@@ -88,6 +90,7 @@ function zoekPrinters() {
         }
     });
 }
+
 
 
 
