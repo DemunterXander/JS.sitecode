@@ -14,7 +14,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const printerList = document.querySelector('.printerList');
     const checkboxes = document.querySelectorAll('.filtering input[type="checkbox"]');
 
-    
+    function voegToeAanWinkelmand(printer){
+        //getitem zoekt de opgeslagen  producten in localstorage of maakt een nieuwe moesten er nog geen producten instaan
+        const winkelkar = JSON.parse(localStorage.getItem("winkelkar")) ||[];
+
+        //voeg het product dat je hebt gekocht toe aan winkelkar
+        winkelkar.push(printer);
+
+        //de setitem zet het item dat je hebt gekocht in de locazlstorage van hierboven  json.stringify zorgt ervoor dat de string naar een array wordt geconverteerd
+        localStorage.setItem("winkelkar", JSON.stringify(winkelkar));
+
+        
+    }
 
 
     function laatPrintersZien() {
