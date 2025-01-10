@@ -1,0 +1,152 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div.header {
+    height: 100px;
+    list-style: none;
+    display: flex; /* Flexbox actief maken */
+    justify-content: space-between; /* Verdeel items naar links, midden en rechts */
+    align-items: center; /* Verticaal centreren */
+    background-color: blue; /* Achtergrondkleur */
+    position: relative;
+    padding: 0 20px; /* Voeg wat ruimte aan de zijkanten toe */
+}
+
+img.BedrijfLogo {
+    position: relative;
+    left: 50%; /* Zorg dat het logo aan de linkerkant blijft */
+}
+
+div.Bestellen {
+    display: flex; /* Flexbox om de winkelwagen en lijn naast elkaar te plaatsen */
+    align-items: center; /* Zorg dat ze verticaal gecentreerd zijn */
+    gap: 10px; /* Voeg wat ruimte toe tussen winkelwagen en lijn */
+}
+
+img.winkelwagen {
+    position: relative;
+    margin-right: 10px; /* Verwijder marge omdat flexbox dit regelt */
+    
+    
+}
+
+img.lijnHeader {
+    width: 2px; /* Breedte van de lijn aanpassen */
+    height: 30px; /* Hoogte van de lijn aanpassen */
+    background-color: black; /* Zorg dat de lijn zichtbaar is */
+}
+
+P.totaalBedrag{
+    position: relative;
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex; /*flex kan je 1 demensionaal werken bv kolommen naast elkaar grid is 2 dimensionaal dus 2onder elkaar en 1tje ernaast*/
+    background-color: blue;
+    min-height: 60px;
+    font-size: 25px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 5em;   
+}
+
+main{
+    
+    max-width: 1200px;
+    margin: 0 auto; /* Centreer de container */
+    padding: 20px;
+    
+    
+}
+
+/* Zoekbalk Container */
+.zoekBalkContainer {
+    display: flex; /* Maak het een Flexbox-container */
+    justify-content: center; /* Centreer horizontaal */
+    align-items: center; /* Centreer verticaal */
+    margin-top: 10px;
+    
+}
+
+/* Zoekbalk Styling */
+.zoekTekst {
+    justify-content: center; /* Zorg dat de inhoud gecentreerd blijft */
+    display: flex;
+    flex-direction: column; /* Input en andere elementen worden onder elkaar geplaatst */
+    padding: 0.5em;
+    background-color: black;
+    border-radius: 8px;
+    width: 500px; /* Breedte van de zoekbalk */
+}
+
+.zoekTekst input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+   
+}
+
+
+/* alle printers */
+ul.printerList{
+    list-style: none;
+    border-radius: 8px;
+    display: grid; /* Zet de lijst in een grid-layout */
+    grid-template-columns: repeat(3,1fr); 
+    gap: 20px; /* Ruimte tussen de kaarten */
+    padding: 0;
+    margin: 20px 0;
+    
+}
+
+li.allePrinters{
+    background-color: red;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.afbBeschrijving{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.beschrijving{
+   margin-right: 10px;
+    display: grid;
+    margin-top: 10px;
+}
+
+img.printerAfbeelding{
+    height: 200px;
+    display: grid;
+    margin-top: 10px;
+    margin-left: 60px;
+ 
+}
+
+
+footer{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: blue;
+    height: 60px;
+    align-content: center;
+    text-align: center;
+    max-height: 300px;
+    margin-top: auto;
+}

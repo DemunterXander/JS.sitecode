@@ -1,0 +1,28 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+div.haederKar {
+    height: 100px;
+    list-style: none;
+    display: flex; /* Flexbox actief maken */
+    align-items: center; /* Verticaal centreren */
+    background-color: blue; /* Achtergrondkleur */
+    position: relative;
+    padding: 0 20px; /* Voeg wat ruimte aan de zijkanten toe */
+}
+
+img.BedrijfLogoKar {
+    position: relative;
+    left: 50%; /* Zorg dat het logo aan de linkerkant blijft */
+}
+
+
+
+img.Terugkeren {
+    height: 30px;
+    margin-left: auto;
+}
+
